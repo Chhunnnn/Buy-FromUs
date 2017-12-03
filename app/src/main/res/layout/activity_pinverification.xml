@@ -12,15 +12,14 @@
         android:id="@+id/textView2"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:text="Please enter your verification code on your message"
+        android:text="Please enter your verification code:"
         android:textColor="@android:color/white"
         android:textSize="20dp"
         tools:layout_editor_absoluteX="30dp"
         tools:layout_editor_absoluteY="302dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="22dp"
         android:layout_above="@+id/p_v_pin_input"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="22dp" />
+        android:layout_alignParentEnd="true" />
 
     <EditText
         android:id="@+id/p_v_pin_input"
@@ -29,7 +28,7 @@
         android:textColorHint="@android:color/white"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="phone"
         tools:layout_editor_absoluteY="234dp"
         tools:layout_editor_absoluteX="85dp"
         android:layout_above="@+id/p_v_submit_btn"

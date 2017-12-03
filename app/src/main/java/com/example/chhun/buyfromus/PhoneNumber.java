@@ -23,7 +23,7 @@ public class PhoneNumber extends AppCompatActivity {
     public void submit(View view){
 //        phone_value = Integer.parseInt(p_n_phonenumber_input.toString());
         phone_value = p_n_phonenumber_input.getText().toString();
-        if (phone_value.equals("123")){
+        if (phone_value.equals("94765764108")){
             Intent i = new Intent(PhoneNumber.this, PINVerification.class);
             startActivity(i);
         }

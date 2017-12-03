@@ -29,9 +29,9 @@
         android:textSize="20dp"
         tools:layout_editor_absoluteX="13dp"
         tools:layout_editor_absoluteY="175dp"
-        android:layout_marginBottom="10dp"
-        android:layout_above="@+id/total_price"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/event_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
 
     <TextView
         android:id="@+id/price_per_unit"
@@ -41,33 +41,23 @@
         android:text="Ticket: "
         tools:layout_editor_absoluteX="44dp"
         tools:layout_editor_absoluteY="247dp"
-        android:layout_centerVertical="true"
-        android:layout_alignEnd="@+id/p_u_minus_btn"
-        android:layout_marginEnd="38dp" />
-
-    <TextView
-        android:id="@+id/total_price"
-        android:textColor="#FFFFFF"
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:layout_alignTop="@+id/price_per_unit"
-        android:layout_toEndOf="@+id/event_image"
-        android:text="Total Prices: "
-        tools:layout_editor_absoluteX="247dp"
-        tools:layout_editor_absoluteY="245dp" />
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="132dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/p_u_minus_btn" />
 
     <TextView
         android:id="@+id/unit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/total_price"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="108dp"
         android:text="Unit"
         android:textColor="#FFFFFF"
         android:textSize="25dp"
         tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="329dp" />
+        tools:layout_editor_absoluteY="329dp"
+        android:layout_alignBaseline="@+id/p_u_minus_btn"
+        android:layout_alignBottom="@+id/p_u_minus_btn"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/p_u_minus_btn"
@@ -77,8 +67,9 @@
         android:text="-"
         tools:layout_editor_absoluteX="234dp"
         tools:layout_editor_absoluteY="309dp"
-        android:layout_marginEnd="35dp"
-        android:layout_alignTop="@+id/p_u_plus_btn"
+        android:layout_marginEnd="22dp"
+        android:layout_alignBaseline="@+id/price_per_unit"
+        android:layout_alignBottom="@+id/price_per_unit"
         android:layout_toStartOf="@+id/unit" />
 
     <Button
@@ -89,10 +80,9 @@
         android:text="+"
         tools:layout_editor_absoluteX="104dp"
         tools:layout_editor_absoluteY="309dp"
-        android:layout_marginStart="32dp"
         android:layout_alignBaseline="@+id/unit"
         android:layout_alignBottom="@+id/unit"
-        android:layout_toEndOf="@+id/unit" />
+        android:layout_toStartOf="@+id/total_price" />
 
     <Button
         android:id="@+id/p_u_confirm_btn"
@@ -102,8 +92,48 @@
         android:text="PURCHASE"
         tools:layout_editor_absoluteX="144dp"
         tools:layout_editor_absoluteY="382dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="16dp"
         android:layout_below="@+id/p_u_plus_btn"
-        android:layout_alignStart="@+id/p_u_plus_btn" />
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price Per Unit (USD) : "
+        android:textSize="20dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="11dp"
+        android:layout_below="@+id/Description"
+        android:layout_toStartOf="@+id/p_u_plus_btn" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.00"
+        android:textSize="30dp"
+        android:layout_marginEnd="41dp"
+        android:layout_above="@+id/total_price"
+        android:layout_alignEnd="@+id/Description" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Total(USD) : "
+        android:textSize="20dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignStart="@+id/textView6"
+        android:text="TextView"
+        android:textSize="30dp" />
 </RelativeLayout>

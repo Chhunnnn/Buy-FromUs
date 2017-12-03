@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.chhun.buyfromus.Receipt"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="202dp"
+        android:layout_height="310dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="    Purchasing Detail"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="   ID:"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="   From:"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="   To"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="   Product"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="   Amount"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="   Price "
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="   Total"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="   PIN"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CLick to see the Map"
+            android:onClick="goToMap"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="146dp"
+        android:layout_height="311dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right"
+            android:text="CL00235"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right"
+            android:text="BuyFromUs"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right"
+            android:text="94765764108"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right"
+            android:text="CL concert"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right"
+            android:text="03"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right"
+            android:text="USD 5.00"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right"
+            android:text="USD 15.00"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right"
+            android:text="562498"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
