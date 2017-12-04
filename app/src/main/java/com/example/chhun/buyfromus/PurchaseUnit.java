@@ -21,7 +21,7 @@ public class PurchaseUnit extends AppCompatActivity {
         unit = (TextView) findViewById(R.id.unit);
         total = (TextView) findViewById(R.id.total_price);
 
-        total.setText(""+total_price+"0=");
+        total.setText(""+total_price+"0");
 
         unit.setText("1");
 
@@ -41,7 +41,7 @@ public class PurchaseUnit extends AppCompatActivity {
             cv -= 1;
             total_price = 5.00 * cv;
             unit.setText(""+cv);
-            total.setText(""+total_price);
+            total.setText(""+total_price+"0");
         }
 
     }
